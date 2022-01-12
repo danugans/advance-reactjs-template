@@ -3,9 +3,7 @@
 function App() {
   return (
     // code inside div
-    <div>
-      
-    </div>
+    <div></div>
   );
 }
 
