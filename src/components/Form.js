@@ -1,6 +1,7 @@
 // import css modules
 import cssModules from "./Form.module.css";
 
+//style here using camelCase
 const styles = {
   form: {
     margin: "16px 20% 0",
@@ -25,7 +26,6 @@ const styles = {
   },
 };
 
-
 function Form() {
   return (
     <div>
@@ -34,27 +34,28 @@ function Form() {
           <label htmlFor="username" style={styles.formLabel}>
             Username
           </label>
-          <input
-            id="username"
-            placeholder="Input username"
-            style={styles.formInput}
-          />
+          <input id="username" placeholder="Input username" style={styles.formInput} />
         </div>
         <div className={cssModules.formGroup}>
           <label htmlFor="email" className={cssModules.formLabel}>
             Email
           </label>
-          <input
-            id="email"
-            type="email"
-            placeholder="Input email"
-            className={cssModules.formInput}
-          />
+          <input id="email" type="email" placeholder="Input email" className={cssModules.formInput} />
         </div>
         {/* code here */}
+        <div className="form-group">
+          <label htmlFor="gender" className="form-label">
+            Gender
+          </label>
+          <select id="gender" className="form-select">
+            <option>Choose...</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
       </form>
     </div>
-  )
+  );
 }
 
-export default Form
+export default Form;
