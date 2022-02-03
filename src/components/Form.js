@@ -1,4 +1,5 @@
 // import css modules
+import cssModules from "./Form.module.css";
 
 const styles = {
   form: {
@@ -24,7 +25,6 @@ const styles = {
   },
 };
 
-
 function Form() {
   return (
     <div>
@@ -33,16 +33,18 @@ function Form() {
           <label htmlFor="username" style={styles.formLabel}>
             Username
           </label>
-          <input
-            id="username"
-            placeholder="Input username"
-            style={styles.formInput}
-          />
+          <input id="username" placeholder="Input username" style={styles.formInput} />
         </div>
         {/* code here */}
+        <div className={cssModules.formGroup}>
+          <label className={cssModules.formLabel} htmlFor="email">
+            Email
+          </label>
+          <input className={cssModules.formInput} type="text" id="email" />
+        </div>
       </form>
     </div>
-  )
+  );
 }
 
-export default Form
+export default Form;
