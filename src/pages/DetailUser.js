@@ -20,7 +20,7 @@ const DetailUser = () => {
     return () => {
       setData(null);
     };
-  }, [params.id]);
+  }, []);
 
   return (
     // code element inside Container
@@ -28,6 +28,7 @@ const DetailUser = () => {
     // console.log first to see what information that you get from fetching
     <Container className="text-center">
       <h1>Data user with parameters</h1>
+      <p className="h2">{data?.name}</p>
       <p>{data?.username}</p>
       <p>{data?.email}</p>
       <p>{data?.phone}</p>
