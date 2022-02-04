@@ -8,7 +8,7 @@ function Home() {
   // create function for handle push to another pages
   // using button
   const handlePushToSignIn = () => {
-    navigate.push("/signin");
+    navigate("/signin");
   };
 
   return (

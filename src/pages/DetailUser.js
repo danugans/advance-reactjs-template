@@ -10,6 +10,8 @@ const DetailUser = () => {
   // call that hooks here and store to variable
   const params = useParams();
 
+  console.log(params);
+
   // don't worry about this, we'll cover later
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`)
@@ -18,7 +20,7 @@ const DetailUser = () => {
     return () => {
       setData(null);
     };
-  }, []);
+  }, [params.id]);
 
   return (
     // code element inside Container
