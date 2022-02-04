@@ -18,5 +18,7 @@ const DetailAbout = (props) => {
 DetailAbout.propTypes = {
   title: PropTypes.string.isRequired,
   summary: PropTypes.string,
-  total: PropTypes.string,
+  total: PropTypes.number,
 };
+
+export default DetailAbout;

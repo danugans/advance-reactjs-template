@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 
 // import component
-import DetailAbout from "./components/DetailAbout";
+import DetailAbout from "../components/DetailAbout";
 
 function About() {
   return (
@@ -13,7 +13,7 @@ function About() {
         lorem lobortis id. Nullam maximus elit quis nibh gravida, ut hendrerit felis fringilla. Proin at aliquam tortor.
       </p>
       {/* code here */}
-      <DetailAbout title="Rinso" summary="unilever" total="1200" />
+      <DetailAbout title="Rinso" summary="unilever" total={1250} />
     </Container>
   );
 }
